@@ -1,0 +1,13 @@
+.sidebar {
+    grid-area: n;
+    color: antiquewhite;
+}
+.container {
+    background-color: rgb(96, 142, 142);
+}
+
+.active {
+    color: rgb(199, 185, 160);
+    transition: color 0.3s ease;
+}
+

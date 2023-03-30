@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.title {
+    font-size: 19px;
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button {
+    border-radius: 5px;
+    box-shadow: 0 0 1px rgb(50, 62, 72);
+    transition: all 0.3s ease;
+    padding: 10px 9px;
+}
+
+.button:hover {
+    background-color: #f5f5f5;
+    transition: all 0.3s ease;
+}
