@@ -17,12 +17,6 @@ const Sidebar: React.FC = () => {
                         <li className={m.item}>
                             <NavLink to="/users" className={ navTarget => navTarget.isActive ? m.active : m.link }>Users</NavLink>
                         </li>
-                        <li className={m.item}>
-                            <a href="true" className={m.link}>Music</a>
-                        </li>
-                        <li className={m.item}>
-                            <a href="true" className={m.link}>Settings</a>
-                        </li>
                     </ul>
                 </nav>
             </div>

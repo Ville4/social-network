@@ -25,34 +25,6 @@ type dispatchPropsType = {
   initializeThunk: () => void
 }
 
-/*const items1: MenuProps['items'] = ['My Profile', '2q', '3'].map((key) => ({
-  key,
-  label: key,
-}));
-
-const items2: MenuProps['items'] = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
-  (icon, index) => {
-    const key = String(index + 1);
-
-    return {
-      key: `sub${key}`,
-      icon: React.createElement(icon),
-      label: `sub${key}` === 'sub1' ? 'My Profile' : `sub${key}` === 'sub2' ? 'Messages'
-      : 'Users',
-
-
-      children: new Array(4).fill(null).map((_, j) => {
-        const subKey = index * 4 + j + 1;
-        return {
-          key: subKey,
-          label: `option${subKey}`,
-        };
-      }),
-    };
-  },
-);*/
-
-
 const App: React.FC<mapPropsType & dispatchPropsType> = (props) => {
 
   useEffect(() => {
@@ -67,7 +39,6 @@ const App: React.FC<mapPropsType & dispatchPropsType> = (props) => {
     return <Preloader />
   }
   return (
-
     <Layout>
       <Header/>
       <Layout>
@@ -78,7 +49,6 @@ const App: React.FC<mapPropsType & dispatchPropsType> = (props) => {
             defaultSelectedKeys={['1']}
             defaultOpenKeys={['sub1']}
             style={{ height: '100%', borderRight: 0 }}
-            //items={items2}
           >
             <SubMenu key={'sub1'} icon={<UserOutlined/>} title='My profile'>
               <Menu.Item key={1}>

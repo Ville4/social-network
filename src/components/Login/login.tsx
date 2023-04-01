@@ -27,8 +27,18 @@ const Login: React.FC = () => {
     if(isAuth) return <Navigate to='/profile'/>
     return(   
         <div className={m.wrapper}> 
-            <h1 className={m.title}>Login</h1>
-            <LoginReduxForm onSubmit={onSubmit} captchaURL={captchaURL}/>       
+            <h1 className={m.title}>Log in</h1>
+            <LoginReduxForm onSubmit={onSubmit} captchaURL={captchaURL}/>
+            <div className={m.testDataWrapper}>
+                <div>
+                    <div>E-mail for test:</div>
+                    <span>free@samuraijs.com</span>
+                </div>
+                <div>
+                    <div>Password for test:</div> 
+                    <span>free</span>
+                </div>
+            </div>       
         </div>
     )
 }
